@@ -1,7 +1,7 @@
 name: Dynamic Env Example
 
-on:
-  workflow_dispatch:
+on: push
+  
 
 jobs:
   dynamic-env-demo:
