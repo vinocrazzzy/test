@@ -13,6 +13,9 @@ jobs:
 
       - name: Step 2 - show current time
         run: echo "TODAY is = $TODAY"
-
+        
+      - name: Wait for 20 seconds
+        run: sleep 20
+        
       - name: Step 3 - show current time again
-        run: echo "Step 3 sees "TODAY is = $TODAY"
+        run: echo Step 3 sees "TODAY is = $TODAY"
