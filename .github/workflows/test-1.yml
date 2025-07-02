@@ -1,0 +1,18 @@
+name: Dynamic Env Example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dynamic-env-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Set MY_DYNAMIC
+        run: |
+          echo "MY_DYNAMIC=HelloFromDynamicEnv" >> $GITHUB_ENV
+
+      - name: Step 2 - Use MY_DYNAMIC
+        run: echo "Step 2 sees MY_DYNAMIC = $MY_DYNAMIC"
+
+      - name: Step 3 - Use MY_DYNAMIC again
+        run: echo "Step 3 sees MY_DYNAMIC = $MY_DYNAMIC"
