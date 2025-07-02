@@ -10,7 +10,7 @@ jobs:
       MY_STATIC: HelloFromStaticEnv
     steps:
       - name: Step 1 - Show MY_STATIC
-        run: echo "Step 1 sees MY_STATIC = $MY_STATIC"
+        run: echo "Step 1 sees = $MY_STATIC"
 
       - name: Step 2 - Show MY_STATIC again
-        run: echo "Step 2 sees MY_STATIC = $MY_STATIC"
+        run: echo "Step 2 sees = $MY_STATIC"
