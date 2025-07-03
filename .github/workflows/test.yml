@@ -1,5 +1,6 @@
 name: Static Env Example
-
+#this is for testing static env vars in a workflow
+#this workflow will run when manually triggered   
 on:
   workflow_dispatch:
 
